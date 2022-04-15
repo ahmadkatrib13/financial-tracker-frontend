@@ -9,6 +9,7 @@ import {
   LineElement,
   BarElement,
   ArcElement,
+  LineController,
   Title,
   Tooltip,
   Legend,
@@ -29,12 +30,14 @@ ChartJS.register(
   LinearScale,
   BarElement,
   ArcElement,
+  LineController,
 
   Title,
   Tooltip,
   Legend,
   PointElement,
-  LineElement
+  LineElement,
+  
 );
 
 function LineChart(props) {
