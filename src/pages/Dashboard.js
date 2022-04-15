@@ -24,7 +24,7 @@ function Dashboard() {
         try {
           let res = await axios({
             method: "GET",
-            url: `${process.env.REACT_APP_API_URI}api/transactions/tota`,
+            url: `${process.env.REACT_APP_API_URI}api/transactions/total`,
             ...headers
           });
   
