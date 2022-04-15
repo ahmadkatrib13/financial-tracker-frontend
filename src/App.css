@@ -1,0 +1,149 @@
+
+
+
+@import url("fonts/montserrat/Montserrat.css");
+:root{
+    font-size:0.85rem;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat'; 
+    
+}
+
+.App{
+ display: flex;
+ /* padding-left: 300px; */
+ 
+}
+
+
+main{
+    width: 100%;
+}
+
+
+
+.ouss {
+    display: flex;
+    background-color: rgba(241, 241, 241, 0.945);
+  }
+
+.ouss .main-container {
+
+  display: flex;
+  background-color: rgba(241, 241, 241, 0.945);
+}
+main {
+  padding: 10px;
+}
+
+.ouss .title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Sidebar w hek */
+.ouss .sidebar {
+  background: #5FB671;
+  color: white;
+  height: 100vh;
+  overflow-y: auto;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  position: sticky;
+  top:0
+}
+
+.ouss .top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+  padding: 15px 10px;
+  height: 4rem;
+}
+.ouss .logo {   
+  line-height: 0;
+}
+.ouss .burger{
+  cursor: pointer;
+}
+.ouss .bars {
+  width: 30px;
+  cursor: pointer;
+}
+.ouss .hide {
+  display: none;
+}
+.ouss .routes {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.ouss .link {
+  display: flex;
+  color: #C7E5CE;
+  gap: 1rem;
+  padding: 5px 10px;
+  border-right: 0.25rem solid transparent;
+  transition: 0.2s ease;
+  text-decoration: none;
+  align-items: center;
+}
+.ouss .link:hover {
+  /* border-right: 0.25rem solid white; */
+  color: #fefefe;
+  /* background-color: #4da35e; */
+}
+.ouss .active {
+  border-right: 0.25rem solid white;
+  color: white;
+  
+}
+.ouss .link_text {
+  white-space: nowrap;
+  font-size: 1rem;
+  
+}
+
+.ouss .menu {
+  display: flex;
+  color: #C7E5CE;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+  cursor: pointer;
+}
+.ouss .menu_item {
+  display: flex;
+  gap: 18px;
+}
+.ouss .menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.ouss .menu_container .link {
+  padding-left: 20px;
+}
+
+
+
+/* width */
+.sidebar::-webkit-scrollbar {
+display: none;
+}
+
+
+@media(max-width: 600px) { 
+  .ouss .sidebar {
+ position: fixed;
+ z-index: 2;
+ }
+}
+
